@@ -3,3 +3,16 @@ extends layout
 block content
   h1= 'Express App'
   p Welcome to #{title}
+  head
+    title Messages
+  body
+    h2 Message List
+     ul
+      each message in messages
+        li
+          strong User: #{message.user}
+          div Text: #{message.text}
+          Date: #{message.added}
+
+  a(href='new') Create a new message
+
