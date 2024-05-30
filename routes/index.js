@@ -31,6 +31,4 @@ router.post('/new', function(req, res, next) {
   res.redirect('/')
 });
 
-
-
 module.exports = router;
